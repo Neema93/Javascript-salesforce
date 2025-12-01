@@ -1,0 +1,15 @@
+// JavaScript Module: demo.js
+import { LightningElement } from 'lwc';
+export default class Demo extends LightningElement {
+    text = 'This text came from a JS prop';
+}
+
+<template>
+    <lightning-card title="Basic DOM Example" icon-name="utility:hierarchy">
+        <div class="slds-card__body slds-card__body-inner">
+            <p>
+                <lightning-formatted-text value={text}></lightning-formatted-text>
+            </p>
+        </div>
+    </lightning-card>
+</template>
